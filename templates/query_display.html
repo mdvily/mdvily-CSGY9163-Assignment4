@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Query</title>
+</head>
+<body>
+ <h1 id="queryid">Query{{ query_id }}:</h1><br>
+ <p id="username">Username that submitted the query: {{ username }}</p>
+ <p id="querytext">Submitted text: {{ query }}</p><br>
+ <p id="queryresults">Misspelled words: {{ response }}</p><br><br>
+ <p><a href="/spell_check">Spell check</a></p>
+ <p><a href="/history">User query history</a></p>
+ <p><a href="/logout">Log out</a></p>
+</body>
+</html>

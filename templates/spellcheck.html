@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Text submission</title>
+</head>
+<body>
+<h1>Submit text to be spell-checked below</h1>
+<p/>
+<form name="text" id="text" action="http://127.0.0.1:5000/spell_check" method="post">
+    Text: <INPUT SIZE=32 id="inputtext" name="inputtext" TYPE='text'/><p/>
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+    <button id="submittext" type="submit">Spell check!</button>
+</form>
+<p><a href="/logout">Log out</a></p>
+</body>
+</html>

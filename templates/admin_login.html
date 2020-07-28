@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin View</title>
+</head>
+<body>
+<h1>User login history</h1>
+             <p/>
+                <form name="userquery" id="userquery" action="http://127.0.0.1:5000/login_history" method="post">
+                    Which user's login history would you like to look up? Enter username: <INPUT SIZE=32 id="uname" name="uname" TYPE='text' required/><p/>
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                    <button id="submit" type="submit">Submit</button>
+</body>
+</html>
